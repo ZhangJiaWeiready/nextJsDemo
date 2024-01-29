@@ -4,7 +4,7 @@ const path = require('path');
 // 则必须使用以下内容添加到项目根目录中的.lintstagedrc.js中，以便指定--file标志的使用
 
 const buildEslintCommand = (filenames) => (
-  `next lint --fix --file ${filenames.map((f) => path.relative(process.cwd(),f)).join(' --file')}`
+  `next lint --fix --file ${filenames.map((f) => path.relative(process.cwd(),f)).join('--file')}`
 )
 
 module.exports = {
